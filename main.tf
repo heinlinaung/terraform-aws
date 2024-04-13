@@ -46,3 +46,7 @@ resource "aws_security_group" "allow_http" {
     Name = "allow_http"
   }
 }
+
+output "public_ip" {
+  value = aws_instance.web.public_ip
+}
