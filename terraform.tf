@@ -6,3 +6,12 @@ terraform {
     }
   }
 }
+
+provider "aws" {
+  default_tags {
+    tags={
+      Environment="test"
+      Project="web-server"
+    }
+  }
+}
